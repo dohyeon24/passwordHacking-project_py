@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python 디버거: 현재 파일",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,  // 디버깅 중 사용자 코드 외의 라이브러리 코드도 포함하려면 false로 설정
+            "args": [
+                "--listen", "127.0.0.1:62500",  // 디버깅 대기 포트 설정
+                "--wait-for-client"  // 디버깅 클라이언트가 연결될 때까지 대기
+            ]
+        }
+    ]
+}
